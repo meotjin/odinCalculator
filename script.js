@@ -32,3 +32,12 @@ function operate(operator, number1, number2) {
 			break;
 	}
 }
+
+const screen = document.querySelector('#screen');
+
+const buttons = document.querySelectorAll('.number');
+buttons.forEach((b)=>{
+    b.addEventListener('click',(e)=>{
+        screen.textContent += e.target.textContent;
+    })
+})

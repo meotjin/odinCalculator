@@ -27,6 +27,7 @@ body{
     background-color: silver;
     font-size: 86px;
     font-weight: bold;
+    word-wrap: normal;
 }
 
 #buttons{
