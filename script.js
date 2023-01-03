@@ -1,3 +1,8 @@
+let operation;
+let storedNum1;
+let storedNum2;
+
+
 function add(number1, number2) {
 	return number1 + number2;
 }
@@ -40,4 +45,27 @@ buttons.forEach((b)=>{
     b.addEventListener('click',(e)=>{
         screen.textContent += e.target.textContent;
     })
+})
+
+const operators = document.querySelectorAll('.operator');
+
+operators.forEach(operator => {
+    operator.addEventListener('click',e => {
+        
+    })
+})
+
+const clearButton = document.querySelector('#clear');
+clearButton.addEventListener('click', e => {
+	screen.textContent = '';
+	operation = undefined;
+	storedNum1 = undefined;
+	storedNum2 = undefined;
+})
+
+const undoButton = document.querySelector('#undo');
+undoButton.addEventListener('click', e => {
+	let newText = screen.textContent.split('');
+	newText.pop();
+	screen.textContent = newText.join('');
 })

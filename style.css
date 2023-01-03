@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: bisque;
 }
 
 #container{
@@ -15,6 +16,7 @@ body{
     height: 850px;
     border: 2px black solid;
     background-color: gray;
+    border-radius: 10px;
 }
 
 #screen{
